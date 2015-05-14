@@ -1,0 +1,23 @@
+---
+# tasks file for ansible-role-hdhomerun
+
+
+- name: "apt | ensure HD HomeRun's dvb driver repo"
+  apt_repository: repo={{ hdhomerun_dvb_apt_repo }} update_cache=Yes
+  when: ansible_pkg_mgr == 'apt'
+
+
+- name: "apt | ensure HD HomeRun's dvb driver"
+  apt: name={{ item }} 
+  with_items: 
+   - libhdhomerun-dev
+   - dvbhdhomerun-dkms
+   - dvbhdhomerun-utils
+  when: ansible_pkg_mgr == 'apt'
+
+
+- name: "svc | ensure dvbhdhomerun-utils service"
+  service: name=dvbhdhomerun-utils enabled=yes
+
+
+...

@@ -1,0 +1,23 @@
+---
+galaxy_info:
+
+  author: Prescott
+
+  description: Installs HD HomeRun drivers.
+
+  license: BSD
+
+  min_ansible_version: 1.4.4
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  - name: Debian
+    versions:
+    - Wheezy
+
+  categories:
+  - system
+
+dependencies: []

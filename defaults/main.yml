@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-role-hdhomerun
+
+hdhomerun_dvb_apt_repo: "ppa:r3gis-r3gis/dvbhdhomerun"
+
+...

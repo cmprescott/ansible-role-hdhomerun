@@ -7,8 +7,5 @@
     - name: "ensure HDHomeRun"
       role: ../..
       sudo: Yes
-      # Override because Travis using Precise.
-      # TODO: Make dynamic depending on OS Version
-      hdhomerun_dvb_apt_repo: "ppa:tfylliv/dvbhdhomerun"
 
 ...

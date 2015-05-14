@@ -8,5 +8,5 @@
 - Enable dvbhdhomerun-utils service
 - Continuous Integration
 
-[unreleased]: https://github.com/cmprescott/ansible-role-kodi/compare/0.0.1...HEAD
+[unreleased]: https://github.com/cmprescott/ansible-role-hdhomerun/compare/0.0.1...HEAD
 [0.0.1]: https://github.com/cmprescott/ansible-role-hdhomerun/compare/267f4d02...0.0.1
